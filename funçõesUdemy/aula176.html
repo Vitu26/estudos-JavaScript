@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var largura = prompt("Informe a largura do terreno em metros:");
+        var comprimento = prompt("Informe o comprimento do terreno em metros:");
+
+        var area = calcularAreaTerreno(largura, comprimento);
+        document.write('O terreno possui ' + area + ' metros quadrados.');
+
+        function calcularAreaTerreno(largura, comprimento){
+            //lógica
+            var area = largura * comprimento;
+
+            return area;
+        }
+
+        function soma(a, b) {
+            //b = (b === undefined)? 0 : b;
+            return a + b;
+        }
+        console.log(soma(7, 7));
+        console.log(soma(7, 7, 15, 25, 56));//os demais parametros são descartados pelo js
+        //ou seja, o js tem a habilidade de ignorar os parametros descenessários para a aplicação não quebrar
+        console.log(soma(7));//considera o segundo parametro como undefined e a soma vai ser um "not a number"
+        console.log(soma());//será 2 paramentros undefined que retornará um not a number
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
