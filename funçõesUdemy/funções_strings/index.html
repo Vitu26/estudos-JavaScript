@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //propriedade length(serve para ver a quantidade de caracteres de uma string)
+        document.write('José Victor Loic de Lemos Viana' . length);
+        document.write('<br>');
+        document.write('José Victor Loic de Lemos Viana' . charAt(7));//mostra qual caractere está no indice 7
+        document.write('<br>');
+
+        var nome = ' José Victor Loic de Lemos Viana ';
+        document.write(nome.indexOf('é')); //informa onde foi o primeiro indice que aparece o caractere
+        document.write('<br>');
+        document.write(nome.replace('Viana', 'Santos'));//altera uma ocorrencia por outra
+        document.write('<br>');
+        document.write(nome.substr(5, 6));//informa qual indece vc quer recuperar e quantos indices em diante vai recuperar
+        document.write('<br>');
+        document.write(nome.toLocaleLowerCase());//para deixar todos os caracteres minusculos
+        document.write('<br>');
+        document.write(nome.toLocaleUpperCase());//para deixar todos os caracteres maiusculos
+        document.write('<br>');
+        document.write('-'+nome.trim()+'-');//remove os espaços que ficam nas extremidades dos caracteres
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
