@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data = new Date();
+
+        // document.write(data.getDate());//verifica o dia
+        // document.write('<br>');
+        // document.write(data.getMonth() + 1);//recupera o mês mas verifica de 0 a 11,ou seja janeiro é o mês 0 e dezembro o 11, então se soma mais um pra dar os 12
+        // document.write('<br>');
+        // document.write(data.getFullYear());//verifica o ano
+
+        //adicionar ou remover dias da data
+        document.write(data.toString());
+        data.setDate(data.getDate() + 1);
+        document.write('<hr>');
+        data.setMonth(data.getMonth() + 1);
+        document.write(data.toString());
+        document.write('<hr>');
+        data.setFullYear(data.getFullYear() + 1);
+        document.write(data.toString());
+        document.write('<hr>');
+
+        document.write(data.toString());
+        data.setDate(data.getDate() - 1);
+        document.write('<hr>');
+        data.setMonth(data.getMonth() - 1);
+        document.write(data.toString());
+        document.write('<hr>');
+        data.setFullYear(data.getFullYear() - 1);
+        document.write(data.toString());
+        document.write('<hr>');
+
+        //15/01/2017
+        var data1 = new Date(2017, 0, 17);
+
+        //25/01/2023
+        var data2 = new Date(2023, 0, 25);
+
+        document.write(data1.toString());
+        document.write('<hr>');
+        document.write(data2.toString());
+        document.write('<br><br><hr>');
+
+        //converter as datas para algo que possamos calcular
+        document.write(data1.getTime());
+        document.write('<hr>');
+        document.write(data2.getTime());
+        document.write('<br><br><hr>');
+
+        var diferenca_entre_datas = Math.abs(data1.getTime() - data2.getTime());
+        //encontrar a quantidade de milessegundos entre data1 e data2
+        document.write(diferenca_entre_datas);
+        document.write('<hr>');
+
+        //quantos milessegundos tem um dia
+        var milissegundos_por_dia = (1*24*60*60*1000)
+        document.write('1 dia tem: '+milissegundos_por_dia+' milessegundos');
+
+        document.write('<br><br><hr>');
+        document.write(diferenca_entre_datas / milissegundos_por_dia);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
