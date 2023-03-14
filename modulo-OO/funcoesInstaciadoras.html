@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Pessoa(){
+            this.nome = "Victor";
+            this.idade = 30;
+            this.printNome = function(){
+                alert(this.nome);
+            }
+            this.returnAnimal = function(cachorro){
+                return cachorro;
+            }
+        }
+
+        
+
+        var pessoa = new Pessoa();//criando novo objeto chamado pessoa
+        var pessoa_2 = new Pessoa();
+        pessoa.printNome();
+
+        
+
+        pessoa_2.nome = 'Brogo';
+        // pessoa.nome = 'Brogo';
+
+        alert(pessoa_2.nome);
+
+
+        function Animal(){
+            this.nome = 'Thor';
+            this.idade = 6;
+            this.raca = 'labrador';
+            this.ele = 'é um arrombado';
+        }
+
+        var cachorro = new Animal();
+        alert(cachorro.ele);
+
+        alert(pessoa.returnAnimal(cachorro).raca);
+
+        function Animal2 (nome, peso){
+            if(nome == undefined && peso == undefined){
+                nome = 'Lombrigo';
+                peso = '45kg';
+            }
+            this.nome = nome;
+            this.peso = peso;
+        }
+
+        animal = new Animal2();
+        alert(animal.nome);
+        alert(animal.peso);
+    </script>
+</body>
+</html>

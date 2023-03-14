@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal{
+            constructor(){
+                this.nome = nome;
+            }
+
+            printNome(){
+                return this.nome;
+            }//metodo
+        }
+
+        class Cachorro extends Animal{
+            //classe cachorro está herdando tudo da classe animal, que é a classe pai
+            constructor(nome){
+                super(nome);//o super invoca o construtor da classe pai, é essencial dar o super quando a classe pai tem um construtor
+                this.ele = 'Arrombado'
+            }
+
+            printRaca(){
+                return this.ele;
+            }
+        }
+
+        cachorro = new Cachorro('Thor');
+
+        alert(animal.printNome());
+        alert(cachorro.printRaca());
+    </script>
+</body>
+</html>
